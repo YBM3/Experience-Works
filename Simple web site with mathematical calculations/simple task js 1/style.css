@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	background-color: lightgray;
+}
+#container{
+	border: 3px solid darkred;
+	width: 1000px;
+	height: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#autor{
+	height: 40px;
+	width: 940px;
+	border: 3px solid darkred;
+	background-color: red;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+#info{
+	color: black;
+	text-align: center;
+	background-color: white;
+	width: 400px;
+	border: 3px solid blue;
+	margin-right: auto;
+	margin-left: auto;
+}
+fieldset{
+	margin-top: 30px;
+	font-size: 20px;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#footer{
+	height: 40px;
+	width: 940px;
+	border: 3px solid darkred;
+	background-color: red;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+}
+#space{
+	height: 360px;
+	width: 100%;
+}

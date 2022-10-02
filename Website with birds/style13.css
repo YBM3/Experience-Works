@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+	font-family: Verdana;
+}
+
+#logo{
+	background-color: sienna;
+	color: white;
+	text-align: center;
+	float: left;
+	width: 40%;
+	height: 120px;
+}
+
+#lewa{
+	background-color: sienna;
+	color: white;
+	float: left;
+	width: 60%;
+	height: 660px;
+}
+
+#prawa{
+	float: left;
+	background-color: sandybrown;
+	width: 40%;
+	height: 660px;
+}
+
+#stopka{
+	background-color: #4D1900;
+	color: white;
+	clear: both;
+	text-align: right;
+	width: 100%;
+	height: 27px;
+}
+
+.menu{
+	height: 120px;
+	width: 60%;
+	background-color: sandybrown;
+	float: left;
+}
+
+.menu a{
+	background-color: green;
+	color: yellow;
+	padding: 20px 50px 20px 50px;
+	
+}
+
+.menu a:hover{
+	background-color: yellow;
+	color: green;
+}
