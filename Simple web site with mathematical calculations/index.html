@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		function zabiezpieczenie(opis)
+		{
+			var haslo  = prompt("Podaj hasło: ");
+			console.log(haslo);
+			if(haslo=="liczba"){
+			console.log(haslo);
+			opis();}
+		}
+
+		function opis()
+		{
+			document.getElementById("zawartosc").innerHTML = "PESEL";
+		}
+
+		function liczba_z_zakresu()
+		{
+			var ciag = "";
+			var liczba1;
+			var liczba2;
+			while(true){
+			var wynik1 = prompt("Podaj liczbę początkową: ");
+			if(parseInt(wynik1)>0 || parseInt(wynik1)<0 || parseInt(wynik1)==0){
+				liczba1=parseInt(wynik1);
+				break;}
+			}
+			while(true){
+			var wynik2 = prompt("Podaj liczbę końcową: ");
+			if(parseInt(wynik2)>0 || parseInt(wynik2)<0 || parseInt(wynik2)==0){
+				liczba2=wynik2
+				break;}
+			}
+			if(liczba1<=liczba2)
+			{
+				for(i=liczba1; i<=liczba2; i++)
+					ciag+=i + " ";
+			}
+			else{
+				for(i=liczba1; i>=liczba2; i--)
+					ciag+= i + " ";
+			}
+
+			document.getElementById("zawartosc").innerHTML = ciag;
+		}
+
+		function a()
+		{
+			document.getElementById("zawartosc").innerHTML = "";
+		}
+	</script>
+	<script src="jaka_to_liczba.js"></script>
+</head>
+<body>
+	<div id="baner"><a onclick="a()"><img src="baner.jpeg"></a></div>
+	<div id="menu">
+		<h2>MENU</h2>
+		<a onclick="zabiezpieczenie(opis)">Opis</a><br>
+		<a onclick="zabiezpieczenie(jaka_to_liczba)">Jaka to liczba?</a><br>
+		<a onclick="liczba_z_zakresu()">Liczby całkowite z zakresu</a><br>
+	</div>
+	<div id="zawartosc"></div>
+</body>
+</html>
